@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Font size quote 28px */
+
+:root {
+  /* Primary Colors */
+  --lightcyan: hsl(193, 38%, 86%);
+  --neongreen: hsl(150, 100%, 66%);
+
+  /* Neutral colors */
+  --grayblue: hsl(217, 19%, 38%);
+  --dkgrayblue: hsl(217, 19%, 24%);
+  --darkblue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
