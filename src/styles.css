@@ -18,7 +18,55 @@
 }
 
 body {
+  margin: 0;
+  background: var(--darkblue);
   font-family: "Manrope", sans-serif;
+  color: var(--lightcyan);
+}
+
+.container {
+  width: 95%;
+  max-width: 550px;
+  margin: 25vh auto;
+  text-align: center;
+  border-radius: 15px;
+  background: var(--dkgrayblue);
+  padding: 30px 10px;
+  position: relative;
+}
+
+.main--title {
+  font-size: 0.8rem;
+  color: var(--neongreen);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+blockquote {
+  font-size: 1.75rem;
+}
+
+.divider--img {
+  padding: 10px 0 25px;
+  /* background-image: url("./images/pattern-divider-desktop.svg");
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.btn--advice {
+  position: absolute;
+  left: 247px;
+  border: 0;
+  padding: 15px;
+  background: var(--neongreen);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--advice:hover {
+  box-shadow: 2px 3px 25px var(--neongreen);
 }
 
 .attribution {

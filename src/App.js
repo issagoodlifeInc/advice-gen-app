@@ -1,5 +1,7 @@
 import React from "react";
 import dice from "./images/icon-dice.svg";
+import dividermobile from "./images/pattern-divider-mobile.svg";
+import divider from "./images/pattern-divider-desktop.svg";
 
 export default function App() {
   return (
@@ -8,7 +10,9 @@ export default function App() {
       <blockquote>
         "It is easy to sit up and take notice whats hard is to bllahblaah blaah"
       </blockquote>
-      <div className="divider--img"></div>
+      <div className="divider--img">
+        <img src={divider} alt="line" />
+      </div>
       <button className="btn--advice">
         <img src={dice} alt="dice" />
       </button>
