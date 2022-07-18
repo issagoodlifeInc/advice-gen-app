@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import dice from "./images/icon-dice.svg";
 import dividermobile from "./images/pattern-divider-mobile.svg";
 import divider from "./images/pattern-divider-desktop.svg";
 
 export default function App() {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    // return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+  console.log(width);
   return (
     <main className="container">
       <h1 className="main--title">Advice #117</h1>
@@ -11,7 +20,7 @@ export default function App() {
         "It is easy to sit up and take notice whats hard is to bllahblaah blaah"
       </blockquote>
       <div className="divider--img">
-        <img src={divider} alt="line" />
+        <img src={width >= 580 ? divider : dividermobile} alt="dividerline" />
       </div>
       <button className="btn--advice">
         <img src={dice} alt="dice" />
