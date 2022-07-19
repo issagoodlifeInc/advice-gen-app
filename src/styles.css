@@ -27,7 +27,7 @@ body {
 .container {
   width: 95%;
   max-width: 550px;
-  margin: 25vh auto;
+  margin: 25vh auto 60px;
   text-align: center;
   border-radius: 15px;
   background: var(--dkgrayblue);
@@ -83,6 +83,6 @@ blockquote {
   }
   .container {
     width: 95%;
-    margin: 20vh auto;
+    margin: 20vh auto 70px;
   }
 }
