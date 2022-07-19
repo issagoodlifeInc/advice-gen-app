@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import dice from "./images/icon-dice.svg";
 import dividermobile from "./images/pattern-divider-mobile.svg";
 import divider from "./images/pattern-divider-desktop.svg";
@@ -29,8 +29,9 @@ export default function App() {
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     setAdvice(fetchData());
-    console.log(advice);
-  }, []);
+  }, [fetchData()]);
+
+  console.log(advice);
 
   const getAdvice = () => {
     fetchData();
