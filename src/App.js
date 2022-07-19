@@ -20,14 +20,11 @@ export default function App() {
 
   const fetchData = async () => {
     await axios.get(url).then((res) => {
-      console.log(res.data.slip);
+      // console.log(res.data.slip);
       setAdvice(res.data.slip);
       return res.data.slip;
     });
   };
-
-  // let initAdvice = fetchData();
-  // console.log(initAdvice);
 
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
@@ -36,7 +33,6 @@ export default function App() {
 
   const getAdvice = () => {
     fetchData();
-    console.log(advice);
   };
 
   return (

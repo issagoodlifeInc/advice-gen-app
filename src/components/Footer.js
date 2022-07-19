@@ -9,7 +9,11 @@ export default function Footer() {
       >
         Frontend Mentor
       </a>
-      . Coded by <a href="https://linktr.ee/les_kim">Lesley Kimutai</a>.
+      . Coded by{" "}
+      <a href="https://linktr.ee/les_kim" rel="noreferrer" target="_blank">
+        Lesley Kimutai
+      </a>
+      .
     </footer>
   );
 }
