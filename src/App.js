@@ -29,7 +29,7 @@ export default function App() {
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     setAdvice(fetchData());
-  }, [fetchData()]);
+  }, []);
 
   console.log(advice);
 
