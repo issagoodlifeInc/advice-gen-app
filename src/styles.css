@@ -62,7 +62,7 @@ blockquote {
   padding: 18px;
   background: var(--neongreen);
   border-radius: 50%;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn--advice:hover {
@@ -75,6 +75,11 @@ blockquote {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: all 0.3s ease-in;
+}
+
+.attribution a:hover {
+  color: var(--neongreen);
 }
 
 @media (max-width: 580px) {
