@@ -15,9 +15,9 @@
   "author": "Lesley",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "axios": "^1.15.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-scripts": "^5.0.1"
   },
   "eslintConfig": {
