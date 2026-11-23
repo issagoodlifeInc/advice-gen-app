@@ -1,2 +1,14 @@
 node_modules
 README.md 
+server/favourites.db
+server/node_modules
+build
+build/
+.env
+.env.local
+*.log
+npm-debug.log*
+.DS_Store
+coverage/
+*.db
+dist/

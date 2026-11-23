@@ -1,0 +1,1 @@
+{"dependencies":{"express":"^4.21.2"},"description":"Favourites backend for the advice generator app — Express + SQLite","license":"ISC","main":"index.js","name":"advice-generator-server","private":true,"scripts":{"start":"node index.js"},"version":"1.0.0"}
