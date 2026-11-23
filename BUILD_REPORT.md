@@ -124,3 +124,22 @@ only work while the server is running.
   this local folder; the repo is still on branch `master` at `e5b3161`,
   with the changes above uncommitted. Nothing in `issagoodlifeInc` was
   touched remotely.
+
+## Branch — pushed November 23, 2026
+
+- **Branch:** `feature/typescript-backend-favourites` (new branch, created from `master` at `e5b3161`)
+- **Pushed:** yes — branch exists on origin at `9df84b2273e9d336e07c28e332eed68522b98278`
+- **Commits on the branch:**
+  - `67db69f` — "Rebuild advice generator in TypeScript with backend favourites, Bible Advice and language switch" (22 files: TypeScript port, backend, README, this report, updated `.gitignore`)
+  - `05adcd2`, `9066b35`, `9df84b2` — removed the old `src/App.js`, `src/index.js`, `src/components/Footer.js`
+- **`master` untouched** — still at `e5b3161`. Nothing was merged.
+- **How the push happened:** a plain `git push` failed here (no GitHub credential helper for HTTPS, `gh` not logged in), so the branch was created and the files pushed through the connected GitHub account instead. The local commit `067bcad` in this folder holds the same content; the branch on GitHub has its own commit SHAs.
+- **Screenshots:** no new screenshots were captured — the headless Chromium on this machine would not start (Hatch WebGL domain policy error). The README keeps the old screenshots and says new ones are pending, to be added under `docs/screenshots/`.
+- **To pull it (Lesley):**
+
+```bash
+git fetch origin
+git checkout feature/typescript-backend-favourites
+```
+
+Then tweak as you like, commit, and push that branch. When you're happy with it, it can be merged into `master`.
